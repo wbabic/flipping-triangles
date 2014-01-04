@@ -1,16 +1,23 @@
-* geometry
+* geometry and symmetry in the plane
   A Clojurescript project using core.async and drawing to the canvas
 ** Usage
 *** leiningen
+    #+BEGIN_SRC shell
     lein deps :tree
+    #+END_SRC
 
 *** cljs
+    #+BEGIN_SRC shell
     lein cljsbuild once
+    or
     lein cljsbuild auto
+    #+END_SRC
 
 *** simple server
-    cd resources/public
-    python -m SimpleHTTPServer 8889
+    #+BEGIN_SRC shell
+    $ cd resources/public
+    $ python -m SimpleHTTPServer 8889
+    #+END_SRC
     
     http://localhost:8889/hello.html
    
@@ -21,27 +28,28 @@
     or, from within Emacs,
     M-x cider-jack-in
     
-    user>
-    
     C-c C-k ->  nrepl-load-current-buffer
     C-c M-n ->  nrepl-set-ns
 
 *** browser repl   
     from a clojure repl
 
-    user=>
-    (require 'cljs.repl.browser)
-    (cemerick.piggieback/cljs-repl :repl-env (cljs.repl.browser/repl-env :port 9000))
-   
+    #+BEGIN_SRC clojure
+    user=> (require 'cljs.repl.browser)
+    user=> (cemerick.piggieback/cljs-repl :repl-env (cljs.repl.browser/repl-env :port 9000))
+    #+END_SRC
+    
+    #+BEGIN_SRC clojre
     cljs.user=> (.log js/console "hello")
+    #+END_SRC
 
 ** Dependencies
-   leiningen
-   clojure
-   clojurescript
-   core.async
-   piggieback
-   cider Emacs nrepl magit org shell
+   - leiningen
+   - clojure
+   - clojurescript
+   - core.async
+   - piggieback
+   - cider Emacs nrepl magit org shell
 ** License
    Copyright © 2013 Walter P Babic
 
