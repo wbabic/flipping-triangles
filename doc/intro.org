@@ -1,0 +1,95 @@
+* Introduction to geometry and symmetry
+  use triangles to generate examples of symmetry groups in the plane
+  make custom kaleidoscopes
+** overview
+   reflect an isoceles triangle on its edge
+   to create:
+     - an equilateral triangle
+     - a rectange(or diamond),
+     - a hexagon
+       
+   demonstrate D3 D2 and D6 rosette groups
+   polygons
+   triangle rectangle hexagon
+   square
+   dodecagon
+   pentagon
+   decagon
+       
+   repeat flipping
+   to fill the plane
+   see the wallpaper groups
+
+   generate regular polygons from fundamental region
+   generate unit cell from fundamental region
+   
+   create kaeidoscopes and gyrations
+   with user filled pattern decoration
+
+   divide one triangle into smaller similar ones
+   combine triangles to make bigger ones
+
+   explore self similar structure
+   
+** implementation
+   clojure
+   clojurescript
+   core.async 
+   canvas
+
+   lein-cljsbuild
+      
+   nrepl
+   clojure repl
+
+   brepl
+   browser connected repl
+   piggieback
+   interactive dev
+
+   npm
+   bower
+   bootstrap
+
+** mathjax
+   resources/public/hello.html
+** next steps
+*** add buttons
+    clear and redraw canvas
+    handle button clicks
+
+    draw
+    triangle, diamond and hexagon
+    square
+*** multiple pages
+    overview
+    detail
+
+*** multiple canvases
+    fundamental region
+    unit cell
+    first sets of triangles: diamond, triangle, hexagon
+    square
+    
+*** multiple processes within a canvas
+    draw simultaneous in different areas
+    
+*** save canvas as png
+    at various scales for icons, images, background
+
+*** design
+    used bower to install bootstrap
+    copied bootstrap.min.css to resources/public/css
+
+**** navigation bar
+**** thumbnails
+**** panels
+**** template ideas
+     http://getbootstrap.com/examples/carousel/
+     http://getbootstrap.com/examples/theme/
+     http://getbootstrap.com/examples/offcanvas/
+*** provide choice of fundamental region
+**** circles
+**** 4 similar triangles
+**** center to midpoint triangles
+**** color palettes

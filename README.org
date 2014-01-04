@@ -1,0 +1,48 @@
+* geometry
+  A Clojurescript project using core.async and drawing to the canvas
+** Usage
+*** leiningen
+    lein deps :tree
+
+*** cljs
+    lein cljsbuild once
+    lein cljsbuild auto
+
+*** simple server
+    cd resources/public
+    python -m SimpleHTTPServer 8889
+    
+    http://localhost:8889/hello.html
+   
+*** clojure repl
+    to get a clojure repl:
+
+    lein repl
+    or, from within Emacs,
+    M-x cider-jack-in
+    
+    user>
+    
+    C-c C-k ->  nrepl-load-current-buffer
+    C-c M-n ->  nrepl-set-ns
+
+*** browser repl   
+    from a clojure repl
+
+    user=>
+    (require 'cljs.repl.browser)
+    (cemerick.piggieback/cljs-repl :repl-env (cljs.repl.browser/repl-env :port 9000))
+   
+    cljs.user=> (.log js/console "hello")
+
+** Dependencies
+   leiningen
+   clojure
+   clojurescript
+   core.async
+   piggieback
+   cider Emacs nrepl magit org shell
+** License
+   Copyright © 2013 Walter P Babic
+
+   Distributed under the Eclipse Public License, the same as Clojure.
