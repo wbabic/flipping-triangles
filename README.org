@@ -1,5 +1,8 @@
 * geometry and symmetry in the plane
   A Clojurescript project using core.async and drawing to the canvas
+
+  see for a demo: http://wbabic.github.io/flipping-triangles/
+  
 ** Usage
 *** leiningen
     #+BEGIN_SRC shell
