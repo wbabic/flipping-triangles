@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Geometry and Symmetry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+    <div class="well">
+      <div class="container">
+        <h1 class="text-center">*632</h1>
+      </div>
+    </div>
+    <div>
+      <div class="row">
+        <div class="col-md-2">
+          <h3>Controls</h3>
+          <div class="list-group">
+            <a href="#" id="diamond" class="list-group-item">diamond</a>
+            <a href="#" id="triangle" class="list-group-item active">triangle</a>
+            <a href="#" id="hexagon" class="list-group-item">hexagon</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3>Fundamental Region</h3>
+          <canvas id="fundamental" width="200" height="200">
+            <h2>Canvas not supported!</h2>
+          </canvas>
+        </div>
+        <div class="col-md-6">
+          <h3>Planar Region</h3>
+          <canvas id="canvas" width="600" height="400">
+            <h2>Canvas not supported!</h2>
+          </canvas>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- pointing to cljsbuild generated js file -->
+  <script src="geometry-advanced.js"></script>
+</body>
+</html>
