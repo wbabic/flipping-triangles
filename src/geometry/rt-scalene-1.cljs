@@ -134,6 +134,7 @@ replace current with result"
     c))
 
 (app-loop repl-in canvas)
+
 (let [in (html-in)]
   (go (while true
         (let [c (<! in)]
